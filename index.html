@@ -6,71 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seguridad Web</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin: 0 10px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar ul li a.active {
+            color: #f0a500;
+        }
+        .fas.fa-bars {
+            display: none;
+        }
+        section {
+            padding: 60px 20px;
+            margin-top: 60px;
+        }
+        .box-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .box {
+            text-align: center;
+            max-width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .image img {
+            display: block;
+            margin: 50;
+            max-width: 150px;
+            height: auto;
+        }
+        .content {
+            text-align: center;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .row .image {
+            flex: 1;
+            text-align: center;
+        }
+        .row .content {
+            flex: 2;
+            padding: 40px;
+        }
+        #social .image img {
+            max-width: 300px; /* Aumenta el tamaño máximo de la imagen de redes sociales */
+        }
+    </style>
 </head>
 <body>
-  
     <header>
         <a href="#" class="logo">TESSFP</a>
-
         <nav class="navbar">
             <ul>
                 <li><a href="#home" class="active">Inicio</a></li>
-                <li><a href="#about" >Consejos</a></li>
-                <li><a href="#course" >Contraseñas</a></li>
-                <li><a href="#review" >Redes Sociales</a></li>
-                <li><a href="#contact" >Malware</a></li>
+                <li><a href="#about">Consejos</a></li>
+                <li><a href="#course">Contraseñas</a></li>
+                <li><a href="#social">Redes Sociales</a></li>
+                <li><a href="#malware">Malware</a></li>
             </ul>
-            
         </nav>
         <div class="fas fa-bars"></div>
     </header>
-
     <section class="home" id="home">
         <div class="content">
             <h1>BIENVENIDO</h1>
             <p>Nos alegra tenerte con nosotros. En nuestra página, te ofrecemos las mejores soluciones y estrategias para proteger tu presencia en línea. Descubre nuestros servicios, mantente informado con nuestros artículos de seguridad y no dudes en contactarnos para cualquier consulta. Estamos aquí para ayudarte a navegar el entorno digital de manera segura y confiable.</p>
         </div>
     </section>
-
-
     <section class="product" id="product">
-
         <div class="box-container">
-
             <div class="box">
                 <i class="fab fa-angular"></i>
                 <h3>Lorem</h3>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
             </div>
-
             <div class="box">
                 <i class="fab fa-apple"></i>
                 <h3>Lorem</h3>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
             </div>
-
             <div class="box">
                 <i class="fab fa-android"></i>
                 <h3>Lorem</h3>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
             </div>
-
         </div>
-
-        <a href="#"><button>Ver mas</button></a>
-
+        <a href="#"><button>Ver más</button></a>
     </section>
-
-
     <section class="about" id="about">
-
         <h1 class="heading">Consejos</h1>
-        <h3></h3>
         <div class="row">
             <div class="image">
-                <img src="images/about.png" alt="">
+                <img src="images/idea.png" alt="Idea">
             </div>
             <div class="content">
                 <h3>Proteger tu presencia en línea es crucial en el mundo digital actual.</h3>
@@ -81,176 +152,92 @@
                 <p>4. Precaución con los Correos Electrónicos</p>
                 <p>5. Redes Wi-Fi Seguras</p>
                 <p>6. Software de Seguridad</p>
-                <a href="https://latam.kaspersky.com/resource-center/preemptive-safety/top-10-preemptive-safety-rules-and-what-not-to-do-online"><button>Leer mas</button></a>
+                <a href="https://latam.kaspersky.com/resource-center/preemptive-safety/top-10-preemptive-safety-rules-and-what-not-to-do-online"><button>Leer más</button></a>
             </div>
         </div>
-
     </section>
-
     <section class="course" id="course">
-
         <h1 class="heading">Contraseñas</h1>
         <h3 class="title">Mantener contraseñas seguras es crucial para proteger tu información personal y cuentas en línea. Aquí tienes algunos consejos sobre cómo crear y mantener contraseñas seguras</h3>
-
         <div class="box-container">
-
             <div class="box">
-                <i class="fab fa-android"></i>
+                <i class="fa-solid fa-user"></i>"></i>
                 <h3>1. Crea Contraseñas Fuertes</h3>
-                <p>Usa contraseñas de al menos 12 caracteres y
-                 mezcla letras mayúsculas y minúsculas, números y símbolos.
-                </p>
+                <p>Usa contraseñas de al menos 12 caracteres y mezcla letras mayúsculas y minúsculas, números y símbolos.</p>
             </div>
-
             <div class="box">
-                <i class="fab fa-apple"></i>
+                <i class="fa-solid fa-file"></i>
                 <h3>2. Usa Gestores de Contraseñas</h3>
                 <p>Utiliza un gestor de contraseñas para almacenar y gestionar tus contraseñas de manera segura.</p>
             </div>
-
             <div class="box">
-                <i class="fab fa-angular"></i>
+                <i class="fa-solid fa-check"></i>
                 <h3>3. Habilita la Autenticación de Dos Factores (2FA)</h3>
                 <p>Añade una segunda capa de protección a tus cuentas, haciendo que sea más difícil para los atacantes acceder a ellas.</p>
             </div>
-
             <div class="box">
-                <i class="fab fa-android"></i>
+                <i class="fa-solid fa-lock-open"></i>
                 <h3>4. Cambia tus Contraseñas Regularmente</h3>
                 <p>Cambia tus contraseñas inmediatamente si sospechas que han sido comprometidas.</p>
             </div>
-
             <div class="box">
-                <i class="fab fa-apple"></i>
-                <h3>5.Evita Escribir Contraseñas</h3>
+                <i class="fa-regular fa-pen-to-square"></i>
+                <h3>5. Evita Escribir Contraseñas</h3>
                 <p>No guardes tus contraseñas en archivos de texto o en papel. Utiliza un gestor de contraseñas para mantenerlas seguras.</p>
             </div>
-
             <div class="box">
-                <i class="fab fa-angular"></i>
-                <h3>6.Activa Alertas de Seguridad</h3>
+                <i class="fa-solid fa-exclamation"></i>
+                <h3>6. Activa Alertas de Seguridad</h3>
                 <p>Configura alertas para recibir notificaciones de actividad sospechosa en tus cuentas.</p>
             </div>
-
         </div>
-
     </section>
-
-    <section class="review" id="review">
-
-        <h1 class="headnig">Redes Sociales</h1>
-        <h3 class="title">ipsum dolor sit amet</h3>
-
-        <div class="box-container">
-            <div class="box">
-                <img src="images/pic1.jpg" alt="">
-                <h3>Loem inpum</h3>
-                <p>ipsum dolor sit amet</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/pic2.jpg" alt="">
-                <h3>Loem inpum</h3>
-                <p>ipsum dolor sit amet</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/pic3.jpg" alt="">
-                <h3>Loem inpum</h3>
-                <p>ipsum dolor sit amet</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="contact" id="contact">
-
-        <h1 class="heading">Malware</h1>
-        <h3>qui suscipit illum error voluptatem.</h3>
+    <section class="about" id="social">
+        <h1 class="heading">Seguridad en Redes Sociales</h1>
         <div class="row">
-            <div class="form-container">
-
-                <form action="">
-                    <input type="text" placeholder="Nombre">
-                    <input type="email" placeholder="Correo">
-                    <input type="number" placeholder="Telefono">
-                    <textarea cols="15" rows="5" placeholder="Mensaje"></textarea >
-                    <input type="submit" value="Enviar">        
-                </form>
-
+            <div class="image">
+                <img src="images/sociales.png" alt="Redes Sociales">
+            </div>
+            <div class="content">
+                <h3>Consejos específicos para protegerse en redes sociales</h3>
+                <p>1.Configura la privacidad de tu perfil: Asegúrate de que tu información personal solo sea visible para amigos o personas de confianza.</p>
+                <p>2.Usa contraseñas seguras y únicas: Nunca reutilices contraseñas entre diferentes redes sociales y utiliza combinaciones complejas.</p>
+                <p>3.Habilita la autenticación de dos factores (2FA): Añade una capa extra de seguridad solicitando un código adicional al iniciar sesión.</p>
+                <p>4.Ten cuidado con los enlaces y mensajes sospechosos: No hagas clic en enlaces desconocidos y no respondas a mensajes de personas que no conoces.</p>
+                <p>5.Revisa tus configuraciones de seguridad regularmente: Asegúrate de mantener actualizadas las configuraciones de privacidad y seguridad en tus cuentas.</p>
+               
+            
+                <a href="https://www.iberdrola.com/innovacion/redes-sociales-privacidad-seguridad"><button>Leer más</button></a>
             </div>
         </div>
-
     </section>
-
-    <section class="footer">
-
-        <div class="icons">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-reddit"></a>
+    <section class="malware" id="malware">
+        <h1 class="heading">Malware</h1>
+        <div class="content">
+            <p>Información sobre malware y cómo protegerse.</p>
         </div>
-
     </section>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script>
+        document.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar ul li a');
+            let current = '';
 
-        $(document).ready(function() {
-
-            $('.fa-bars').click(function() {
-
-                $(this).toggleClass('fa-times');
-                $('.navbar').toggleClass('nav-toggle');
-
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
             });
 
-            $(window).on('scroll load', function() {
-
-                $('.fa-bars').removeClass('fa-times');
-                $('.navbar').removeClass('nav-toggle');
-
-                $('section').each(function() {
-
-                    var id = $(this).attr('id');
-                    var height = $(this).height();
-                    var offset = $(this).offset().top -200;
-                    var top = $(window).scrollTop();
-
-                    if(top >= offset && top < offset + height) {
-                        $('.navbar ul li a').removeClass('active');
-                        $('.navbar').find('[href="#'+id+'"]').addClass('active');
-                    }
-
-                });
-
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
             });
-
         });
-
     </script>
-    
 </body>
 </html>
