@@ -155,7 +155,7 @@ header .fa-bars {
 }
 
 .product .box-container .box {
-    height: 40rem;
+    height: 35rem;
     width: 25rem;
     background: #171717;
     text-align: center;
@@ -315,6 +315,58 @@ header .fa-bars {
 .review {
     background: #171717;
 }
+
+.product .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.product .box-container .box {
+    height: 35rem;
+    width: 25rem;
+    background: #171717;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 3rem;
+    cursor: pointer;
+}
+
+.product .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #ffc246 ;
+    font-size: 3rem;
+    margin: 2rem 0;
+    transition: .2s;
+}
+
+.product .box-container .box h3 {
+    font-size: 2rem;
+    color: #f9580e;
+    transition: .2s;
+}
+
+.product .box-container .box p {
+    font-size: 1.3rem;
+    padding: .7rem 2rem;
+    color: #fff;
+}
+
+.product .box-container .box:hover i {
+    background: #f9580e;
+}
+
+.product .box-container .box:hover h3 {
+    color: #ffc246;
+}
+
 
 
 
